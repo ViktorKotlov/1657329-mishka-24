@@ -1,1 +1,9 @@
-// Начните писать стили здесь
+// globals
+
+@import "./global/variables.scss";
+@import "./global/global.scss";
+
+//components
+
+@import "./components/page-header.scss"
+
