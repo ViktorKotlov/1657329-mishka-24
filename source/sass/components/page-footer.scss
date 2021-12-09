@@ -1,0 +1,15 @@
+.page-footer {
+  background-color: $section-bg-color;
+}
+
+.page-footer__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+

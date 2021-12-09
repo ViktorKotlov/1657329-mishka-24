@@ -1,0 +1,16 @@
+.advantages__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__text {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}

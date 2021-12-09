@@ -1,0 +1,45 @@
+.catalog-form__group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+.catalog-form__title {
+  color: $tiffany;
+  padding: 0;
+}
+
+.catalog-form__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+
+  .personal-data {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.catalog-form__item {
+  align-self: start;
+
+  label {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+}
+
+input,
+textarea {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  opacity: 0.3;
+}
+
+.catalog-form__text {
+  font-size: 14px;
+  line-height: 16px;
+}

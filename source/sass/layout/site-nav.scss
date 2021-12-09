@@ -1,0 +1,36 @@
+.site-nav {
+  position: relative;
+}
+
+.site-nav__toggle {
+  position: absolute;
+  top: -45px;
+  right: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  img {
+    background-color: transparent;
+  }
+}
+
+.nav-item {
+  margin-left: 76px;
+}
+
+
+.site-nav__list {
+  @include reset-list;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
+
+.site-nav__delivery-text {
+  display: none;
+}

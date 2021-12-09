@@ -1,0 +1,19 @@
+.header {
+  padding: 0;
+}
+
+.header__logo {
+  display: block;
+  width: max-content;
+  margin: 22px auto;
+}
+
+.header__img {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+
+  &:hover {
+    outline: 2px solid #dda0dd;
+  }
+}

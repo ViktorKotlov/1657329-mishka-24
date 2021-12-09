@@ -1,0 +1,51 @@
+.reviews__list {
+  @include reset-list;
+}
+
+.reviews__text {
+  margin: 0;
+  line-height: 30px;
+}
+
+.reviews__name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__e-mail {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__toggles-button {
+  position: relative;
+  border: 1px solid #ececec;
+  min-width: 130px;
+  min-height: 50px;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 26px;
+    background-image: url("../../img/svg/arrow/huge-arrow-left.svg");
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:last-of-type {
+    transform: rotate(180deg);
+  }
+}
