@@ -1,0 +1,20 @@
+.contacts__item {
+  display: flex;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contacts__item-description {
+  a {
+    color: $gray;
+    border-bottom: 1px solid #62d1ba;
+  }
+}
+
+.contacts__maps {
+  width: 100%;
+  min-height: 454px;
+  background-image: url("../../img/jpg/map-mobile@1x-new\ 1.jpg");
+  background-size: cover;
+  padding-bottom: 10px;
+}

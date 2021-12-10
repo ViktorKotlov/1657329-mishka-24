@@ -1,0 +1,41 @@
+.production__wrapper {
+  margin: 0 30px;
+}
+
+.production-title {
+  display: flex;
+}
+
+.production-title__icon {
+  align-self: center;
+}
+
+.production-title__heading {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.production-video {
+  position: relative;
+  background-image: url("../../img/jpg/catalog/video-mobile\ 1.jpg");
+  background-repeat: no-repeat;
+  min-width: 260px;
+  min-height: 150px;
+
+  &__button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}
+
+.production-description__text {
+  font-size: 13px;
+  line-height: 24px;
+}

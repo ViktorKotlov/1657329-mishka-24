@@ -1,0 +1,39 @@
+.product-card {
+  .product-card__image {
+    display: block;
+    background-color: $section-bg-color;
+    min-width: 260px;
+    min-height: 195px;
+  }
+
+  .image-bunny {
+    background-image: url("../../img/jpg/catalog/photo-1-mobile\ 1.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .image-basket {
+    background-image: url("../../img/jpg/catalog/photo-2-mobile\ 1.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .image-big-basket {
+    background-image: url("../../img/jpg/catalog/photo-3-mobile\ 1.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.product-card__text {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.product-card__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-card__button {
+  border: 0;
+  background: transparent;
+}

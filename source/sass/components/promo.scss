@@ -1,0 +1,35 @@
+.promo__title {
+  font-size: 25px;
+  margin: 0;
+}
+
+.promo__advantage {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $tiffany;
+}
+
+.promo__description {
+  margin: 0;
+}
+
+.promo__item {
+  display: flex;
+  line-height: 20px;
+}
+
+.promo__image {
+  width: max-content;
+  height: auto;
+  margin: 0 auto;
+}
+
+.promo__price {
+  display: block;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}

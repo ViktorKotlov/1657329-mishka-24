@@ -1,0 +1,16 @@
+.user-nav-list {
+  @include reset-list;
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+
+    svg {
+      position: absolute;
+      left: -40px;
+    }
+  }
+}
