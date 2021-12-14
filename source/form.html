@@ -10,12 +10,14 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo" href="#"><img class="header__img" src="img/logo/mishka-logo-mobile.svg" width="86"
-        height="35" alt="Магазин «Мишка»."></a>
+    <a class="header__logo" href="#">
+      <span class="visually-hidden">Логотип</span>
+    </a>
+    <button class="header__nav-toggle" type="button"><img src="img/svg/site-nav__toggle.svg" width="20" height="14"
+      alt="Открыть меню">
+    <span class="visually-hidden">Открыть меню</span>
+  </button>
     <nav class="site-nav">
-      <button class="site-nav__toggle" type="button"><img src="img/svg/site-nav__toggle.svg" width="20" height="14"
-          alt="Открыть меню">
-        <span class="visually-hidden">Открыть меню</span></button>
       <div class="site-nav__wrapper">
         <ul class="site-nav__list">
           <li class="site-nav__item">
@@ -164,7 +166,7 @@
         </fieldset>
         <span class="catalog-form__text">*Поля обязательны для заполнения</span>
         <button class="catalog-form__button button" type="submit">Отправить
-            заказ</button>
+          заказ</button>
       </form>
     </section>
   </main>

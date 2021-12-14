@@ -1,3 +1,20 @@
 .main-nav-list {
   @include reset-list;
+  display: flex;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav-list__item {
+  margin: 0;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    padding: 28px 0 26px 76px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 167px;
+  }
 }

@@ -1,6 +1,55 @@
+.promo {
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "title title title title title title"
+      "desc desc desc image image image"
+      "price price price image image image";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      "title title title image image image"
+      ". desc desc image image image"
+      ". price price image image image";
+  }
+}
+
+.promo__title-wrapper {
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+  }
+}
+
 .promo__title {
   font-size: 25px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 20px;
+    right: -150px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .promo__advantage {
@@ -9,6 +58,16 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $tiffany;
+
+  @media (min-width: $tablet-width) {
+    line-height: 17px;
+  }
+}
+
+.promo__description-wrapper {
+  @media (min-width: $tablet-width) {
+    grid-area: desc;
+  }
 }
 
 .promo__description {
@@ -20,16 +79,30 @@
   line-height: 20px;
 }
 
-.promo__image {
-  width: max-content;
-  height: auto;
-  margin: 0 auto;
-}
-
 .promo__price {
   display: block;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+}
+
+.promo__price-wrapper {
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    order: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: price;
+  }
+}
+
+.promo__image {
+  width: max-content;
+  height: auto;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-area: image;
+  }
 }
