@@ -11,9 +11,9 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: 1149px) {
-    width: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     padding-left: 50%;
   }
 

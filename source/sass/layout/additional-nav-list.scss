@@ -2,7 +2,7 @@
   @include reset-list;
   position: relative;
 
-  @media (min-width: $tablet-width) and (max-width: 1149px) {
+  @media (min-width: $mobile-width) and (max-width: 1149px) {
     display: none;
   }
 

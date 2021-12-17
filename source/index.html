@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header container">
     <a class="header__logo" href="#">
       <picture>
         <source srcset="img/logo/mishka-logo-tablet.svg" media="(min-width: 768px) and (max-width: 1149px)">
@@ -60,7 +60,7 @@
   </header>
   <main class="page__main">
     <h1 class="visually-hidden">Мишка - магазин вещей для дома ручной работы</h1>
-    <section class="preview">
+    <section class="preview container">
       <div class="preview__wrapper">
         <h2 class="preview__title title title--h2">Милые штуки ручной работы для дома</h2>
         <ul class="preview__list">
@@ -101,7 +101,7 @@
         </ul>
       </div>
     </section>
-    <article class="promo">
+    <article class="promo container">
       <div class="promo__title-wrapper">
         <h2 class="promo__title title title--h2">Вязаные корзинки</h2>
         <span class="promo__advantage">товар недели</span>
@@ -135,7 +135,7 @@
         </picture>
       </div>
     </article>
-    <section class="advantages">
+    <section class="advantages container">
       <h2 class="visually-hidden">Наши приимущества</h2>
       <h2 class="advantages__title title title--h2">Коротко о нас:</h2>
       <ul class="advantages__list">
@@ -228,27 +228,41 @@
         </li>
       </ul>
     </section>
-    <section class="reviews">
+    <section class="reviews container">
       <div class="reviews__wrapper slider">
         <h2 class="reviews__title title title--h2">Отзывы</h2>
         <button class="reviews__button button" type="button">Написать</button>
-        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-          лайков, как у популярных инстамамочек.
-          В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а
-          также набирают больше лайков!</p>
-        <div class="reviews__name-wrapper">
-          <cite class="reviews__name">Анастасия Красильникова</cite>
-          <span class="reviews__e-mail">@misssssiskras</span>
-        </div>
-        <p class="reviews__toggles slider__toggle">
-          <button class="reviews__toggles-button" type="button"><span class="visually-hidden">Предыдущий
+        <ul class="slider__list">
+          <li class="slider-item slider__item--active">
+            <blockquote>
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                лайков, как у популярных инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а
+                также набирают больше лайков!</p>
+            </blockquote>
+            <div class="reviews__name-wrapper">
+              <cite class="reviews__name">Анастасия Красильникова</cite>
+              <span class="reviews__e-mail">@misssssiskras</span>
+            </div>
+          </li>
+          <li class="slider__item">
+            <blockquote>
+              <p class="reviews__text">Здесь могла быть ваша реклама...</p>
+            </blockquote>
+            <div class="reviews__name-wrapper">
+              <cite class="reviews__name">Мистер Исключительный</cite>
+              <span class="reviews__e-mail">@misterexceptional</span>
+          </li>
+        </ul>
+        <p class="slider__toggle">
+          <button class="slider__toggle-button" type="button"><span class="visually-hidden">Предыдущий
               отзыв</span></button>
-          <button class="reviews__toggles-button" type="button"><span class="visually-hidden">Следующий
+          <button class="slider__toggle-button" type="button"><span class="visually-hidden">Следующий
               отзыв</span></button>
         </p>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts container">
       <div class="contacts__wrapper">
         <h2 class="contacts__title title title--h2">Контакты</h2>
         <dl class="contacts__list">
@@ -259,16 +273,21 @@
           </div>
           <div class="contacts__item">
             <dt class="contacts__irem-characteristic">адрес:</dt>
-            <dd class="contacts__item-description">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101
+            <dd class="contacts__item-description">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис
+              101
             </dd>
           </div>
         </dl>
       </div>
-      <div class="contacts__maps"></div>
+      <div class="contacts__maps">
+        <!-- <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.645797592355!2d30.321079455619554!3d59.93809750134012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1639763063387!5m2!1sen!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+      </div>
       <button class="contacts__button button" type="button">Напишите нам</button>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
         <img src="img/logo/logo-footer.svg" width="102" height="35" alt="Логотип">
@@ -307,8 +326,7 @@
           <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-              fill="#63D1BB" />
-          </svg>
+              fill="#63D1BB" /></svg>
           <span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>

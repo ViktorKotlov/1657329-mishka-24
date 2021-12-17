@@ -1,5 +1,6 @@
 .page-footer {
   background-color: $section-bg-color;
+  padding: 0 50px;
 }
 
 .page-footer__wrapper {
@@ -9,7 +10,7 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    padding: 0 50px;
+    margin: 0 auto;
   }
 }
 

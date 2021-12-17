@@ -1,6 +1,6 @@
 .reviews {
   @media (min-width: $desktop-width) {
-    margin-left: 50px;
+    padding-left: 50px;
   }
 }
 
@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   padding: 0 50px;
   justify-content: space-between;
+  position: relative;
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     flex-direction: column;
@@ -17,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
-    background-image: url("../../img/jpg/review-img-tablet.jpg");
+    background-image: url("../img/jpg/review-img-tablet.jpg");
     background-repeat: no-repeat;
     background-position: left;
   }
@@ -46,9 +47,25 @@
   }
 }
 
+.slider__list {
+  @include reset-list;
+}
+
 .reviews__text {
   margin: 0;
   line-height: 30px;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item--active {
+  display: block;
+}
+
+blockquote {
+  margin: 0;
 }
 
 .reviews__name-wrapper {
@@ -72,17 +89,20 @@
   line-height: 30px;
 }
 
-.reviews__toggles {
+.slider__toggle {
   display: flex;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
     width: 137px;
     justify-content: space-between;
   }
 }
 
-.reviews__toggles-button {
+.slider__toggle-button {
   position: relative;
   width: 50px;
   height: 26px;
@@ -102,7 +122,7 @@
     position: absolute;
     width: 50px;
     height: 26px;
-    background-image: url("../../img/svg/arrow/huge-arrow-left.svg");
+    background-image: url("../img/svg/arrow/huge-arrow-left.svg");
     background-repeat: no-repeat;
     top: 50%;
     left: 50%;
