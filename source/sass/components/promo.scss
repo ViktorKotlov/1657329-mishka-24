@@ -101,6 +101,11 @@
   width: max-content;
   height: auto;
   margin: 0 auto;
+  background-color: $section-bg-color;
+
+  & picture {
+    display: flex;
+  }
 
   @media (min-width: $tablet-width) {
     grid-area: image;
