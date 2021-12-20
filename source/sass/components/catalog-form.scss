@@ -2,12 +2,32 @@
   margin: 0;
   padding: 0;
   border: 0;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
+.bg-color {
+  @media (min-width: $tablet-width) {
+    background-color: $section-bg-color;
+  }
+}
+
+.catalog-form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
 
 .catalog-form__title {
   color: $tiffany;
   padding: 0;
+  width: 90px;
 }
 
 .catalog-form__list {
@@ -18,6 +38,10 @@
   .personal-data {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
   }
 }
 
@@ -42,4 +66,14 @@ textarea {
 .catalog-form__text {
   font-size: 14px;
   line-height: 16px;
+}
+
+.catalog-form__other-wrapper {
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }

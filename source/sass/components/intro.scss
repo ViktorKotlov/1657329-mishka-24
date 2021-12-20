@@ -1,5 +1,13 @@
 .intro {
   background-color: $section-bg-color;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .intro__wrapper {
@@ -12,4 +20,14 @@
   font-weight: 700;
   text-align: center;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
