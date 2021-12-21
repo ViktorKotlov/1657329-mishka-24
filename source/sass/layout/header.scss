@@ -1,19 +1,70 @@
 .header {
-  padding: 0;
+  min-height: 79px;
+  color: $black;
+  display: flex;
+  position: relative;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    padding: 0 30px;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 89px;
+    padding: 0 50px;
+    flex-direction: inherit;
+  }
 }
 
 .header__logo {
-  display: block;
-  width: max-content;
-  margin: 22px auto;
-}
-
-.header__img {
-  display: block;
-  margin: 0 auto;
-  background-color: transparent;
+  align-self: center;
+  cursor: pointer;
 
   &:hover {
     outline: 2px solid #dda0dd;
+  }
+
+  img {
+    background-color: transparent;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    margin: auto;
+    width: 86px;
+    height: 35px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 114px;
+    height: 46px;
+    position: absolute;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.header__nav-toggle {
+  position: absolute;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: block;
+  top: 50%;
+  right: 0;
+  transform: translate(-150%, -50%);
+
+  img {
+    background-color: transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

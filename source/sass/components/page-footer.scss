@@ -1,5 +1,31 @@
 .page-footer {
   background-color: $section-bg-color;
+  padding: 0 50px;
+}
+
+.page-footer__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.page-footer__logo {
+  img {
+    background-color: transparent;
+  }
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .page-footer__list {
@@ -12,4 +38,3 @@
   display: flex;
   justify-content: center;
 }
-

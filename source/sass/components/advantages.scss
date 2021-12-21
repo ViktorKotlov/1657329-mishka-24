@@ -1,7 +1,26 @@
+.advantages {
+  padding: 0 50px;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
+}
+
 .advantages__list {
   @include reset-list;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
@@ -13,4 +32,5 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  color: $black;
 }

@@ -1,17 +1,22 @@
 .page {
   height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
 
-  &__body {
-    width: 320px;
-    min-width: 320px;
-    height: 100%;
-    margin: 0 auto;
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    line-height: 24px;
-    color: $gray;
-    background-color: $white;
-  }
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  color: $gray;
+  background-color: $white;
+  position: relative;
+}
+
+.page__wrapper {
+  margin: 0 auto;
+  max-width: 1150px;
 }
 
 *,
@@ -73,4 +78,10 @@ a {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
 }

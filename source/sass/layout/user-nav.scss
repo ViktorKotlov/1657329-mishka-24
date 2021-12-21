@@ -1,6 +1,24 @@
 .user-nav-list {
   @include reset-list;
 
+  @media (min-width: $tablet-width) {
+    display: inherit;
+  }
+
+  .user-nav-list__item {
+    margin: 0;
+
+    @media (min-width: $mobile-width) and (max-width: 767px) {
+      padding: 28px 0 26px 76px;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 89px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
   a {
     position: relative;
     text-decoration: none;
@@ -9,8 +27,16 @@
     font-weight: 700;
 
     svg {
-      position: absolute;
-      left: -40px;
+      @media (min-width: $mobile-width) and (max-width: 767px) {
+        position: absolute;
+        left: -40px;
+      }
+    }
+
+    span {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
     }
   }
 }

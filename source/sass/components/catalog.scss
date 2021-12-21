@@ -1,7 +1,13 @@
-.catalog__list {
-  @include reset-list;
+.catalog {
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
-.catalog__item {
-  margin: 30px 30px 0 30px;
+.catalog__list {
+  @include reset-list;
 }
