@@ -4,6 +4,7 @@
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -11,7 +12,8 @@
   margin: 0;
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    padding: 28px 0 26px 76px;
+    padding: 28px 30px 26px 76px;
+    border-top: 1px solid #ececec;
   }
 
   @media (min-width: $tablet-width) {

@@ -9,7 +9,8 @@
     margin: 0;
 
     @media (min-width: $mobile-width) and (max-width: 767px) {
-      padding: 28px 0 26px 76px;
+      padding: 28px 30px 26px 76px;
+      border-top: 1px solid #ececec;
     }
 
     @media (min-width: $tablet-width) {
@@ -29,7 +30,7 @@
     svg {
       @media (min-width: $mobile-width) and (max-width: 767px) {
         position: absolute;
-        left: -40px;
+        left: -44px;
       }
     }
 

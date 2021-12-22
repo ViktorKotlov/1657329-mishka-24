@@ -17,11 +17,11 @@
         <img src="img/logo/mishka-logo-mobile.svg" alt="Логотип">
       </picture>
     </a>
-    <button class="header__nav-toggle" type="button"><img src="img/svg/site-nav__toggle.svg" width="20" height="14"
-        alt="Открыть меню">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="site-nav">
+    <nav class="site-nav site-nav--closed site-nav--nojs">
+      <button class="site-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="site-nav__wrapper">
       <ul class="site-nav__list">
         <li class="site-nav__item">
           <ul class="main-nav-list">
@@ -56,13 +56,14 @@
             Корзина: пока пуста</a></li>
       </ul>
       <span class="site-nav__delivery-text">Бесплатная доставка по России</span>
+    </div>
     </nav>
   </header>
   <main class="page__main">
     <h1 class="visually-hidden">Мишка - магазин вещей для дома ручной работы</h1>
     <section class="preview container">
       <div class="preview__wrapper">
-        <h2 class="preview__title title title--h2">Милые штуки ручной работы для дома</h2>
+        <h2 class="preview__title title title--h2">Милые штуки ручной<br> работы для дома</h2>
         <ul class="preview__list">
           <li class="preview__item">
             <a class="preview__link preview__link--light-tiffany" href="#">

@@ -3,10 +3,12 @@
     display: flex;
     flex-direction: column;
     padding: 0 30px;
+    margin-top: 31px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+    margin-top: 52px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -17,6 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 54px;
     grid-template-areas:
       "title title title image image image"
       ". desc desc image image image"
@@ -65,8 +68,15 @@
 }
 
 .promo__description-wrapper {
+  margin-top: 18px;
+
   @media (min-width: $tablet-width) {
+    margin-top: 38px;
     grid-area: desc;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
   }
 }
 
