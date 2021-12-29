@@ -12,13 +12,17 @@
   }
 }
 
-.bg-color {
+.catalog-form__group--bg-color {
   @media (min-width: $tablet-width) {
     background-color: $section-bg-color;
   }
 }
 
 .catalog-form__wrapper {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -34,14 +38,14 @@
   @include reset-list;
   display: flex;
   flex-direction: column;
+}
 
-  .personal-data {
-    display: flex;
-    flex-direction: column;
+.personal-data {
+  display: flex;
+  flex-direction: column;
 
-    @media (min-width: $tablet-width) {
-      flex-direction: row;
-    }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 }
 
@@ -66,14 +70,35 @@ textarea {
 .catalog-form__text {
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    align-self: center;
+  }
 }
 
-.catalog-form__other-wrapper {
+.catalog-form__inner {
   @media (min-width: $mobile-width) and (max-width: 767px) {
     padding: 0 30px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
+}
+
+.catalog-form__button {
+  width: 230px;
+  padding: 14px 0;
+  font-size: 17px;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 260px;
   }
 }

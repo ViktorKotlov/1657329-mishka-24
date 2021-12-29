@@ -4,6 +4,7 @@
   display: flex;
   position: relative;
   padding: 0 30px;
+  width: 100%;
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     flex-direction: column;
@@ -20,6 +21,7 @@
 .header__logo {
   align-self: center;
   cursor: pointer;
+  z-index: 3;
 
   &:hover {
     outline: 2px solid #dda0dd;
@@ -41,12 +43,15 @@
     width: 114px;
     height: 46px;
     position: absolute;
+    left: 50px;
+    top: 22px;
   }
 
   @media (min-width: $desktop-width) {
     width: 149px;
     height: 72px;
     left: 50%;
+    top: 9px;
     transform: translateX(-50%);
   }
 }

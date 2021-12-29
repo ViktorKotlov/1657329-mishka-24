@@ -10,4 +10,19 @@
 
 .catalog__list {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.catalog__item {
+  &:not(:nth-child(3n+3)) {
+    @media (min-width: $desktop-width) {
+      margin-right: 51px;
+    }
+  }
 }

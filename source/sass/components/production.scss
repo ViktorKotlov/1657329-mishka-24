@@ -9,46 +9,67 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "video video title"
+      "video video desc";
   }
 }
 
-.production-title {
+.production__title {
   display: flex;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../img/svg/video.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
+  }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    order: -1;
+    // position: absolute;
+    // top: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
+    grid-area: title;
   }
 }
 
-.production-title__icon {
-  align-self: center;
-
-  @media (min-width: $tablet-width) {
-    align-self: start;
+.production__description {
+  @media (min-width: $desktop-width) {
+    grid-area: desc;
   }
 }
 
-.production-title__heading {
+.production__title-heading {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 }
 
-.production-video {
+.production__video {
   position: relative;
   width: 260px;
   height: 150px;
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    margin-top: 96px;
+    // margin-top: 96px;
   }
 
   @media (min-width: $tablet-width) {
@@ -60,25 +81,36 @@
   @media (min-width: $desktop-width) {
     width: 683px;
     margin: 0;
+    grid-area: video;
   }
 
   & img {
     max-width: fit-content;
   }
+}
 
-  &__button {
-    padding: 0;
-    border: 0;
-    background-color: transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+.production__button {
+  padding: 0;
+  border: 0;
+  width: 101px;
+  height: 77px;
+  background-color: $gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  @media (min-width: $mobile-width) {
+    width: 101px;
+    height: 77px;
+    background: transparent;
+    background-image: url("../../img/svg/play-mobile.svg");
+    background-repeat: no-repeat;
   }
 }
 
-.production-description__text {
+.production__text {
   font-size: 13px;
   line-height: 24px;
 }

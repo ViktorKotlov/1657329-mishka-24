@@ -73,7 +73,6 @@
 .preview__link {
   display: flex;
   justify-content: space-between;
-  // align-items: center;
   color: $white;
 
   @media (min-width: $mobile-width) and (max-width: 767px) {

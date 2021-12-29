@@ -12,6 +12,8 @@
   color: $gray;
   background-color: $white;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .page__wrapper {
