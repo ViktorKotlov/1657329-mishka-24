@@ -59,7 +59,7 @@
       </div>
     </nav>
   </header>
-  <main class="page__main">
+  <main class="page-main">
     <section class="intro">
       <div class="intro__wrapper container">
         <h1 class="intro__title">Каталог товаров</h1>
@@ -180,8 +180,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <a class="page-footer__logo" href="index.html">
           <img src="img/logo/logo-footer.svg" width="102" height="35" alt="Логотип">
         </a>
@@ -223,8 +222,24 @@
             <span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>
-    </div>
   </footer>
+  <script>
+    var navSite = document.querySelector('.site-nav');
+    var navToggle = document.querySelector('.site-nav__toggle');
+
+    navSite.classList.remove('site-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navSite.classList.contains('site-nav--closed')) {
+        navSite.classList.remove('site-nav--closed');
+        navSite.classList.add('site-nav--opened');
+      }
+      else {
+        navSite.classList.add('site-nav--closed');
+        navSite.classList.remove('site-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>

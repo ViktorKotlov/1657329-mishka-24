@@ -2,16 +2,29 @@
   background-repeat: no-repeat;
   background-color: #f9f9f9;
   background-position: center;
+  border-top: 1px solid #ececec;
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: 767px) {
     background-image: url("../img/jpg/hero-mobile@2x1.jpg");
-    padding-top: 73px;
-    background-position-y: -15%;
+    padding-top: 72px;
+    background-position-y: -16%;
   }
 
-  @media (min-width: $tablet-width) and (max-width: 1149px) {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/jpg/hero-desktop-2.jpg");
     padding-top: 155px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -12px;
+      height: 24px;
+      background-image: url("../../img/svg/bg-line/zigzag-fill-tablet-white.svg");
+      z-index: 1;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -56,11 +69,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
-    margin-top: 218px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 220px;
+    margin-top: 221px;
   }
 }
 
@@ -74,6 +83,7 @@
   display: flex;
   justify-content: space-between;
   color: $white;
+  position: relative;
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     padding: 24px 30px 31px 30px;
@@ -81,9 +91,37 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 25px 36px 34px 36px;
+    padding: 26px 36px 34px 36px;
     height: 119px;
   }
+
+  .preview__link-img {
+    position: absolute;
+    top: 23px;
+    right: 35px;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+      right: 36px;
+    }
+  }
+
+  .preview__link-img--2 {
+    position: absolute;
+    top: 21px;
+    right: 27px;
+
+    @media (min-width: $tablet-width) {
+      top: 31px;
+      right: 33px;
+    }
+  }
+
+
+  // @media (min-width: $tablet-width) {
+  //   padding: 25px 36px 34px 36px;
+  //   height: 119px;
+  // }
 
   &--light-tiffany {
     background-color: $bg-light-tiffany;

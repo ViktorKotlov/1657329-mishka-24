@@ -2,14 +2,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-
-  @media (min-width: $mobile-width) and (max-width: 767px) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-  }
 }
 
 .catalog-form__group--bg-color {
@@ -23,7 +15,12 @@
   min-width: 320px;
   max-width: 1150px;
 
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    padding: 0 30px;
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 0 50px;
     display: flex;
   }
 }
@@ -100,5 +97,6 @@ textarea {
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     width: 260px;
+    margin: 0 auto;
   }
 }

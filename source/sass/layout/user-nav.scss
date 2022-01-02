@@ -17,6 +17,7 @@
       height: 89px;
       display: flex;
       align-items: center;
+      border-left: 1px solid #e6e6e6;
     }
   }
 
@@ -38,6 +39,32 @@
       @media (min-width: $tablet-width) {
         display: none;
       }
+    }
+  }
+}
+
+.user-nav-list__item-search {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 83px;
+
+    svg {
+      position: absolute;
+      top: -9px;
+      left: 33px;
+    }
+  }
+}
+
+.user-nav-list__item-cart {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-left: 83px;
+
+    svg {
+      position: absolute;
+      top: 2px;
+      left: -52px;
     }
   }
 }

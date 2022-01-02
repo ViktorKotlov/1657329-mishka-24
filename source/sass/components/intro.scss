@@ -1,6 +1,8 @@
 .intro {
   background-color: $section-bg-color;
+}
 
+.intro__wrapper {
   @media (min-width: $mobile-width) and (max-width: 767px) {
     padding: 0 30px;
   }
@@ -12,7 +14,7 @@
 
 .intro__title {
   margin: 0 auto;
-  padding: 74px 30px;
+  padding: 74px 0;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
