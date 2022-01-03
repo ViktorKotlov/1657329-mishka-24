@@ -27,6 +27,12 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 11px;
+  }
 }
 
 .advantages__list {
@@ -38,6 +44,10 @@
     column-gap: 2px;
     row-gap: 30px;
     margin-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
   }
 }
 

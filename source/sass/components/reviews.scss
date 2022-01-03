@@ -3,7 +3,9 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 82px;
+  }
 
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
     &::before {
       content: "";
       position: absolute;
@@ -17,7 +19,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 50px;
+    padding: 7px 0 89px 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50px;
+      right: 50px;
+      bottom: 0;
+      height: 23px;
+      background-image: url("../img/svg/bg-line/zigzag-line-desktop.svg");
+      z-index: 1;
+    }
   }
 }
 
@@ -49,7 +62,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 50px 0 174px;
+    padding: 79px 50px 93px 174px;
   }
 }
 
@@ -62,6 +75,12 @@
     max-width: 60%;
     font-size: 43px;
     margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    margin-top: 0;
+    padding-top: 13px;
   }
 }
 
@@ -89,6 +108,19 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 1px;
+
+    br {
+      display: block;
+    }
+
+    .break-2,
+    .break-3 {
+      display: none;
+    }
+  }
 }
 
 .reviews__text-wrapper {
@@ -99,6 +131,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 41px;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+    margin-bottom: 43px;
   }
 }
 
@@ -120,6 +157,10 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
   }
 }
 

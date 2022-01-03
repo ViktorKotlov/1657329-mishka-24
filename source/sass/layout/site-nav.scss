@@ -116,6 +116,7 @@
 
 .site-nav__delivery-text {
   display: none;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -123,5 +124,9 @@
     bottom: -44px;
     right: 0;
     z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 1px;
   }
 }

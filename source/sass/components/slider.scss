@@ -23,6 +23,10 @@
     width: 137px;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    bottom: 73px;
+  }
 }
 
 .slider__toggle-button {

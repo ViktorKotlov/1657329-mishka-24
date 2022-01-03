@@ -1,4 +1,6 @@
 .contacts {
+  position: relative;
+
   @media (max-width: $desktop-width) {
     margin-top: 38px;
   }
@@ -9,11 +11,10 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 0 50px;
+    padding: 0 49px 0 51px;
     justify-content: end;
+    margin-top: 71px;
   }
-
-  position: relative;
 }
 
 .contacts__wrapper {
@@ -50,6 +51,21 @@
       right: 3px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    margin-top: 83px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/svg/flag.svg");
+      top: -21px;
+      right: 414px;
+    }
+  }
 }
 
 .contacts__list {
@@ -64,6 +80,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin-top: 39px;
   }
 }
 
@@ -79,7 +96,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+  }
 
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
     &:nth-of-type(2) {
       margin-left: -1px;
     }
@@ -108,6 +127,10 @@
 
     @media (max-width: $tablet-width) {
       padding-bottom: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 7px;
     }
   }
 }
@@ -162,7 +185,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 50px;
-    left: 300px;
+    bottom: 0;
+    left: 225px;
   }
 }

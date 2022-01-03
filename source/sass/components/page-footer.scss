@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 105px;
+  }
 }
 
 .page-footer__wrapper {
@@ -63,6 +67,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 5px 54px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 56px;
   }
 }
 

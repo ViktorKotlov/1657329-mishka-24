@@ -54,6 +54,12 @@
       left: 33px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    svg {
+      left: 32px;
+    }
+  }
 }
 
 .user-nav-list__item-cart {
@@ -66,5 +72,9 @@
       top: 2px;
       left: -52px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 2px;
   }
 }

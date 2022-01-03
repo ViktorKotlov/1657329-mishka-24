@@ -22,14 +22,26 @@
       right: 0;
       bottom: -12px;
       height: 24px;
-      background-image: url("../../img/svg/bg-line/zigzag-fill-tablet-white.svg");
+      background-image: url("../img/svg/bg-line/zigzag-fill-tablet-white.svg");
       z-index: 1;
     }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/jpg/hero-desktop-1.jpg");
-    padding-top: 158px;
+    padding-top: 157px;
+    background-position-y: -1px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -17px;
+      height: 34px;
+      background-image: url("../img/svg/bg-line/zigzag-fill-desktop.svg");
+      z-index: 1;
+    }
   }
 }
 
@@ -70,6 +82,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 50px;
     margin-top: 221px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 219px;
   }
 }
 
@@ -115,16 +131,20 @@
       top: 31px;
       right: 33px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 34px;
+    }
   }
-
-
-  // @media (min-width: $tablet-width) {
-  //   padding: 25px 36px 34px 36px;
-  //   height: 119px;
-  // }
 
   &--light-tiffany {
     background-color: $bg-light-tiffany;
+
+    .preview__link-title {
+      @media (min-width: $desktop-width) {
+        padding-left: 1px;
+      }
+    }
   }
 
   &--tiffany {
