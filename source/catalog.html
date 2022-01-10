@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог | HTML Academy: Мишка</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,9 +16,9 @@
   <header class="header container">
     <a class="header__logo" href="index.html">
       <picture>
-        <source srcset="img/logo/mishka-logo-tablet.svg" media="(min-width: 768px) and (max-width: 1149px)">
         <source srcset="img/logo/mishka-logo-desktops.svg" media="(min-width: 1150px)">
-        <img src="img/logo/mishka-logo-mobile.svg" alt="Логотип">
+        <source srcset="img/logo/mishka-logo-tablet.svg" media="(min-width: 768px)">
+        <img src="img/logo/mishka-logo-mobile.svg" alt="Логотип.">
       </picture>
     </a>
     <nav class="site-nav site-nav--closed site-nav--nojs">
@@ -72,9 +76,9 @@
           <article class="product-card">
             <a class="product-card__image image-bunny" href="#">
               <picture>
-                <source srcset="img/jpg/catalog/hare-tablet.jpg" media="(min-width: 768px) and (max-width: 1149px)">
-                <source srcset="img/jpg/catalog/hare-desktop.jpg" media="(min-width: 1150px)">
-                <img src="img/jpg/catalog/hare-mobile.jpg" alt="Зайчик-попрыгайчик.">
+                <source media="(min-width: 1150px)" srcset="img/jpg/catalog/hare-desktop.jpg 1x, img/jpg/catalog/hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/jpg/catalog/hare-tablet.jpg 1x, img/jpg/catalog/hare-tablet@2x.jpg 2x">
+                <img src="img/jpg/catalog/hare-mobile.jpg" srcset="img/jpg/catalog/hare-mobile@2x 2x.jpg" alt="Зайчик-попрыгайчик.">
               </picture>
             </a>
             <div class="product-card__content">
@@ -101,10 +105,9 @@
           <article class="product-card">
             <a class="product-card__image image-basket" href="#">
               <picture>
-                <source srcset="img/jpg/catalog/laundry-basket-tablet.jpg"
-                  media="(min-width: 768px) and (max-width: 1149px)">
-                <source srcset="img/jpg/catalog/laundry-basket-desktop.jpg" media="(min-width: 1150px)">
-                <img src="img/jpg/catalog/laundry-basket-mobile.jpg" alt="Большая корзинка для игрушек.">
+                <source media="(min-width: 1150px)" srcset="img/jpg/catalog/laundry-basket-desktop.jpg 1x, img/jpg/catalog/laundry-basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/jpg/catalog/laundry-basket-tablet.jpg 1x, img/jpg/catalog/laundry-basket-tablet@2x.jpg 2x">
+                <img src="img/jpg/catalog/laundry-basket-mobile.jpg" srcset="img/jpg/catalog/laundry-basket-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек.">
               </picture>
             </a>
             <div class="product-card__content">
@@ -131,10 +134,9 @@
           <article class="product-card">
             <a class="product-card__image image-big-basket" href="#">
               <picture>
-                <source srcset="img/jpg/catalog/basket-toys-tablet.jpg"
-                  media="(min-width: 768px) and (max-width: 1149px)">
-                <source srcset="img/jpg/catalog/basket-toys-desktop.jpg" media="(min-width: 1150px)">
-                <img src="img/jpg/catalog/basket-toys-mobile.jpg" alt="Корзинка для белья.">
+                <source media="(min-width: 1150px)" srcset="img/jpg/catalog/basket-toys-desktop.jpg 1x, img/jpg/catalog/basket-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/jpg/catalog/basket-toys-tablet.jpg 1x, img/jpg/catalog/basket-toys-tablet@2x.jpg 2x">
+                <img src="img/jpg/catalog/basket-toys-mobile.jpg" srcset="img/jpg/catalog/basket-toys-mobile@2x.jpg 2x" alt="Корзинка для белья.">
               </picture>
             </a>
             <div class="product-card__content">
@@ -162,9 +164,9 @@
     <section class="production container">
       <div class="production__video">
         <picture>
-          <source srcset="img/jpg/catalog/video-tablet1.jpg" media="(min-width: 768px) and (max-width: 1149px)">
-          <source srcset="img/jpg/catalog/video-desktop.jpg" media="(min-width: 1150px)">
-          <img src="img/jpg/catalog/video-mobile1.jpg" alt="Процесс производства.">
+          <source media="(min-width: 1150px)" srcset="img/jpg/catalog/video-desktop.jpg 1x, img/jpg/catalog/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/jpg/catalog/video-tablet.jpg 1x, img/jpg/catalog/video-tablet@2x.jpg 2x">
+          <img src="img/jpg/catalog/video-mobile.jpg" srcset="img/jpg/catalog/video-mobile@2x.jpg 2x" alt="Процесс производства.">
         </picture>
         <button class="production__button" type="button">
           <span class="visually-hidden">Начать просмотр</span>

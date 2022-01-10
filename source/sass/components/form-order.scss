@@ -1,11 +1,14 @@
 .form-order__text {
   font-size: 13px;
-
-  @media (min-width: $mobile-width) and (max-width: 767px) {
-    padding: 0 30px;
-  }
+  margin-top: 16px;
+  margin-bottom: 30px;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 67px;
+    margin-bottom: 22px;
   }
 }

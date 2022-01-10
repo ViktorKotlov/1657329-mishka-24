@@ -1,14 +1,5 @@
 .page-footer {
   background-color: $section-bg-color;
-  margin-top: 39px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 57px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 100px;
-  }
 }
 
 .page-footer__wrapper {
@@ -63,6 +54,8 @@
 
   @media (max-width: 767px) {
     padding: 27px 0 30px 39px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {

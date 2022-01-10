@@ -5,17 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Страница формы | HTML Academy: Мишка</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="header container">
-    <!-- <div class=""> -->
     <a class="header__logo" href="index.html">
       <picture>
-        <source srcset="img/logo/mishka-logo-tablet.svg" media="(min-width: 768px) and (max-width: 1149px)">
         <source srcset="img/logo/mishka-logo-desktops.svg" media="(min-width: 1150px)">
-        <img src="img/logo/mishka-logo-mobile.svg" alt="Логотип">
+        <source srcset="img/logo/mishka-logo-tablet.svg" media="(min-width: 768px)">
+        <img src="img/logo/mishka-logo-mobile.svg" alt="Логотип.">
       </picture>
     </a>
     <nav class="site-nav site-nav--closed site-nav--nojs">
@@ -59,7 +62,6 @@
         <span class="site-nav__delivery-text">Бесплатная доставка по России</span>
       </div>
     </nav>
-    <!-- </div> -->
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Страница формы</h1>
@@ -74,111 +76,111 @@
         мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="POST">
         <fieldset class="catalog-form__group">
-          <div class="catalog-form__wrapper">
-            <legend class="catalog-form__title">Тип</legend>
-            <ul class="catalog-form__list">
+          <div class="catalog-form__wrapper catalog-form__wrapper--radio">
+            <legend class="catalog-form__title catalog-form__title--radio">Тип</legend>
+            <ul class="catalog-form__list catalog-form__list--radio">
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="tip" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Аксессуар для интерьера</span>
+                  <input class="visually-hidden control__input" type="radio" name="tip" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Аксессуар для интерьера</span>
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="tip">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Детская игрушка</span>
+                  <input class="visually-hidden control__input" type="radio" name="tip">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Детская игрушка</span>
                 </label>
               </li>
             </ul>
           </div>
         </fieldset>
         <fieldset class="catalog-form__group catalog-form__group--bg-color">
-          <div class="catalog-form__wrapper">
-            <legend class="catalog-form__title">Цвет</legend>
+          <div class="catalog-form__wrapper catalog-form__wrapper--color">
+            <legend class="catalog-form__title catalog-form__title--check">Цвет</legend>
             <ul class="catalog-form__list catalog-form__list--checkbox">
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Белый</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="color" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Белый</span>
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Серый</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="color" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Серый</span>
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color">
-                  <span class="control-mark"></span>
-                  <span class="control-label">«Тиффани»</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="color">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Тиффани</span>
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Черный</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="color">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Черный</span>
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Розовый</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="color">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Розовый</span>
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Оранжевый</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="color">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Оранжевый</span>
                 </label>
               </li>
             </ul>
           </div>
         </fieldset>
         <fieldset class="catalog-form__group">
-          <div class="catalog-form__wrapper">
-            <legend class="catalog-form__title">Фио</legend>
+          <div class="catalog-form__wrapper catalog-form__wrapper--name">
+            <legend class="catalog-form__title catalog-form__title--name">Фио</legend>
             <ul class="catalog-form__list">
               <li class="catalog-form__item personal-data">
-                <label>Имя:</label>
+                <label class="data">Имя:</label>
                 <input class="field" type="text" name="name" placeholder="Введите ваше имя*" required>
               </li>
               <li class="catalog-form__item personal-data">
-                <label>Фамилия:</label>
+                <label class="data">Фамилия:</label>
                 <input class="field" type="text" name="name" placeholder="Укажите фамилию*" required>
               </li>
               <li class="catalog-form__item personal-data">
-                <label>Отчество:</label>
+                <label class="data">Отчество:</label>
                 <input class="field" type="text" name="name" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </div>
         </fieldset>
         <fieldset class="catalog-form__group catalog-form__group--bg-color">
-          <div class="catalog-form__wrapper">
-            <legend class="catalog-form__title">Тел</legend>
+          <div class="catalog-form__wrapper catalog-form__wrapper--tel">
+            <legend class="catalog-form__title catalog-form__title--tel">Тел</legend>
             <label class="visually-hidden">Телефон:</label>
-            <input class="field" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <input class="field field--tel" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </div>
         </fieldset>
         <fieldset class="catalog-form__group catalog-form__group--bg-color">
-          <div class="catalog-form__wrapper">
-            <legend class="catalog-form__title">E-mail</legend>
+          <div class="catalog-form__wrapper catalog-form__wrapper--mail">
+            <legend class="catalog-form__title catalog-form__title--mail">E-mail</legend>
             <label class="visually-hidden">Электронная почта</label>
-            <input class="field" type="text" name="E-mail" placeholder="Ваш Email*" required>
+            <input class="field field--mail" type="text" name="E-mail" placeholder="Ваш Email*" required>
           </div>
         </fieldset>
         <fieldset class="catalog-form__group">
-          <div class="catalog-form__wrapper">
-            <legend class="catalog-form__title">Доп</legend>
+          <div class="catalog-form__wrapper catalog-form__wrapper--additionally">
+            <legend class="catalog-form__title catalog-form__title--additionally">Доп</legend>
             <label class="visually-hidden">Дополнительно</label>
             <textarea class="catalog-form__textarea" name="additionally" rows="6"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -227,7 +229,7 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
