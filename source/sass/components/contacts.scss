@@ -1,5 +1,6 @@
 .contacts {
   position: relative;
+  margin-bottom: 39px;
 
   @media (max-width: $desktop-width) {
     margin-top: 38px;
@@ -7,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 69px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {

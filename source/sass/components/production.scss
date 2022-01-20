@@ -6,17 +6,22 @@
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     margin-top: 30px;
-    margin-bottom: 17px;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 53px;
-    margin-bottom: 5px;
+    margin-bottom: 62px;
+    outline: 1px solid #ececec;
+    outline-offset: -1px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 4px;
+    width: 1050px;
+    margin: 4px auto 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr;
@@ -165,7 +170,7 @@
 
 .production__description-button {
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    margin-top: 45px;
+    margin-top: 41px;
   }
 
   @media (min-width: $tablet-width) {

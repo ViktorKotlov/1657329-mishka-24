@@ -5,14 +5,14 @@
 
 .site-nav__toggle {
   position: absolute;
-  padding: 0;
-  width: 21px;
-  height: 20px;
-  border: none;
-  background-color: transparent;
-  display: block;
   top: -40px;
   right: 0;
+  display: block;
+  width: 21px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   transform: translate(-150%, -50%);
 
   @media (min-width: $tablet-width) {
@@ -38,6 +38,7 @@
 
   .site-nav--nojs .site-nav__wrapper {
     display: block;
+    position: relative;
   }
 
   .site-nav--nojs .site-nav__toggle {
@@ -70,7 +71,6 @@
 
 .site-nav__wrapper {
   position: relative;
-  // display: none;
 
   @media (max-width: 767px) {
     position: absolute;
