@@ -1,6 +1,6 @@
 .page {
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
 }
@@ -12,6 +12,8 @@
   color: $gray;
   background-color: $white;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .page__wrapper {
@@ -71,13 +73,14 @@ a {
 .button {
   display: block;
   width: 100%;
-  padding: 16px 0;
+  padding: 12px 0 12px 0;
   border: 2px solid $gray;
   color: $gray;
   background-color: transparent;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
