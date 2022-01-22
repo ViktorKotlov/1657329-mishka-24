@@ -22,6 +22,7 @@
   @media (min-width: $desktop-width) {
     width: 1050px;
     margin: 4px auto 0 auto;
+    margin-bottom: 105px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr;
@@ -169,6 +170,8 @@
 }
 
 .production__description-button {
+  cursor: pointer;
+
   @media (min-width: $mobile-width) and (max-width: 767px) {
     margin-top: 41px;
   }
@@ -185,5 +188,16 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 51px;
+  }
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active,
+  &:focus-within {
+    background-color: #444444;
+    color: #7c7c7c;
   }
 }
