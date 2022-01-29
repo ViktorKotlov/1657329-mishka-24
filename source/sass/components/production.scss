@@ -149,12 +149,26 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
 
+
   @media (min-width: $mobile-width) {
     width: 101px;
     height: 77px;
     background: transparent;
     background-image: url("../../img/svg/play-mobile.svg");
     background-repeat: no-repeat;
+  }
+
+  &:hover {
+    width: 121px;
+    height: 92px;
+    background-size: cover;
+  }
+
+  &:active {
+    width: 81px;
+    height: 61px;
+    opacity: 0.3;
+    background-size: cover;
   }
 }
 

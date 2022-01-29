@@ -14,6 +14,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
+  &--modal-open {
+    overflow: hidden;
+  }
 }
 
 .page__wrapper {
