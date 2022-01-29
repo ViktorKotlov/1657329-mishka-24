@@ -44,19 +44,12 @@
     height: 50px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 26px;
-    background-image: url("../img/svg/arrow/huge-arrow-left.svg");
-    background-repeat: no-repeat;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  &:hover .slider__button-arrow {
+    opacity: 0.6;
   }
 
-  &:last-of-type {
-    transform: rotate(180deg);
+  &:active .slider__button-arrow,
+  &:focus-within .slider__button-arrow {
+    opacity: 0.3;
   }
 }

@@ -16,7 +16,17 @@
 }
 
 .page-footer__logo {
-  img {
+  &:hover .page-footer__img path {
+    fill: #46c1ae;
+  }
+
+  &:active .page-footer__img path,
+  &:focus-within .page-footer__img path {
+    fill: #46c1ae;
+    opacity: 0.1;
+  }
+
+  .page-footer__img {
     background-color: transparent;
   }
 
@@ -74,12 +84,32 @@
 
 .page-footer__link {
   align-self: center;
+
+  &:hover svg path {
+    fill: #46c1ae;
+  }
+
+  &:active svg path,
+  &:focus-within svg path {
+    fill: #46c1ae;
+    opacity: 0.1;
+  }
 }
 
 .copyright__link {
   position: absolute;
   top: 22px;
   right: 39px;
+
+  &:hover svg path {
+    fill: #46c1ae;
+  }
+
+  &:active svg path,
+  &:focus-within svg path {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     top: 0;

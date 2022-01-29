@@ -105,8 +105,12 @@
 }
 
 .preview__item {
+  position: relative;
+
+
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    width: 50%;
   }
 }
 
@@ -115,6 +119,8 @@
   justify-content: space-between;
   color: $white;
   position: relative;
+  background-color: $bg-tiffany;
+  width: 100%;
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     padding: 24px 30px 31px 30px;
@@ -126,34 +132,42 @@
     height: 119px;
   }
 
-  .preview__link-img {
-    position: absolute;
-    top: 23px;
-    right: 35px;
+  &:hover,
+  &:focus-within {
+    background: #46c1ae;
 
     @media (min-width: $tablet-width) {
-      top: 30px;
-      right: 36px;
+      position: absolute;
+      height: 124px;
+      top: -5px;
     }
   }
 
-  .preview__link-img-2 {
-    position: absolute;
-    top: 21px;
-    right: 27px;
+  &:active {
+    background: #46c1ae;
+  }
 
-    @media (min-width: $tablet-width) {
-      top: 31px;
-      right: 33px;
-    }
+  &:hover .preview__link-img g,
+  &:hover .preview__link-img-2 path {
+    opacity: 0.7;
+  }
 
-    @media (min-width: $desktop-width) {
-      right: 34px;
-    }
+  &:focus-within .preview__link-img g,
+  &:focus-within .preview__link-img-2 path {
+    opacity: 0.3;
   }
 
   &--light-tiffany {
     background-color: $bg-light-tiffany;
+
+    &:hover,
+    &:focus-within {
+      background: #59d5bc;
+    }
+
+    &:active {
+      background: #59d5bc;
+    }
 
     .preview__link-title {
       @media (min-width: $desktop-width) {
@@ -161,9 +175,31 @@
       }
     }
   }
+}
 
-  &--tiffany {
-    background-color: $bg-tiffany;
+.preview__link-img {
+  position: absolute;
+  top: 23px;
+  right: 35px;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    right: 36px;
+  }
+}
+
+.preview__link-img-2 {
+  position: absolute;
+  top: 21px;
+  right: 27px;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+    right: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 34px;
   }
 }
 

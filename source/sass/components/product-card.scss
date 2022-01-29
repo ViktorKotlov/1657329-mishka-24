@@ -1,4 +1,13 @@
 .product-card {
+  &:hover .product-card__content {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .product-card__content,
+  &:focus-within .product-card__content {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -115,6 +124,18 @@
   border: 0;
   padding: 0;
   background: transparent;
+  cursor: pointer;
+
+  &:hover svg path {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active svg path,
+  &:focus-within svg path {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;

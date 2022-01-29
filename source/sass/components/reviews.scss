@@ -90,6 +90,8 @@
 }
 
 .reviews__button {
+  cursor: pointer;
+
   @media (min-width: $mobile-width) and (max-width: 767px) {
     order: 3;
   }
@@ -98,6 +100,17 @@
     width: 175px;
     font-size: 17px;
     padding-top: 13px;
+  }
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active,
+  &:focus-within {
+    background-color: #444444;
+    color: #7c7c7c;
   }
 }
 

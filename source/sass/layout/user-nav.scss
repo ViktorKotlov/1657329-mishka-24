@@ -32,6 +32,25 @@
     font-size: 17px;
     font-weight: 700;
 
+    &:hover,
+    &:focus-within {
+      opacity: 0.6;
+    }
+
+    &:hover .user-nav-list__img path,
+    &:focus-within .user-nav-list__img path {
+      fill: #63d1bb;
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:active .user-nav-list__img path {
+      fill: #63d1bb;
+    }
+
     svg {
       @media (min-width: $mobile-width) and (max-width: 767px) {
         position: absolute;

@@ -6,6 +6,17 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
+
+  a {
+    &:hover,
+    &:focus-within {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-nav-list__item {

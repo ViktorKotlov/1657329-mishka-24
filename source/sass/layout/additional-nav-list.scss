@@ -18,6 +18,17 @@
     bottom: -43px;
     left: 1px;
   }
+
+  a {
+    &:hover,
+    &:focus-within {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .additional-nav-list__item {
