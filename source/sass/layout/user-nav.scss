@@ -1,5 +1,6 @@
 .user-nav-list {
   @include reset-list;
+  max-width: 400px;
 
   @media (min-width: $tablet-width) {
     display: inherit;

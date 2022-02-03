@@ -85,12 +85,16 @@
 .page-footer__link {
   align-self: center;
 
-  &:hover svg path {
+  svg {
+    fill: #000000;
+  }
+
+  &:hover svg {
     fill: #46c1ae;
   }
 
-  &:active svg path,
-  &:focus-within svg path {
+  &:active svg,
+  &:focus-within svg {
     fill: #46c1ae;
     opacity: 0.1;
   }

@@ -198,9 +198,9 @@
     border-bottom: 2px solid #62d1ba;
   }
 
-  input:hover + .field-tel__img g,
-  input:active + .field-tel__img g,
-  input:focus + .field-tel__img g {
+  input:hover+.field-tel__img g,
+  input:active+.field-tel__img g,
+  input:focus+.field-tel__img g {
     opacity: 1;
 
     & path {
@@ -251,9 +251,9 @@
     border-bottom: 2px solid #62d1ba;
   }
 
-  input:hover + .field-mail__img path,
-  input:active + .field-mail__img path,
-  input:focus + .field-mail__img path {
+  input:hover+.field-mail__img path,
+  input:active+.field-mail__img path,
+  input:focus+.field-mail__img path {
     fill: #62d1ba;
     opacity: 1;
   }
@@ -315,7 +315,7 @@
     }
   }
 
-  .control__input[type="radio"]:checked + .control__mark::before {
+  .control__input[type="radio"]:checked+.control__mark::before {
     content: "";
     position: absolute;
     width: 16px;
@@ -333,7 +333,7 @@
     }
   }
 
-  .control__input[type="radio"] + .control__mark {
+  .control__input[type="radio"]+.control__mark {
     position: absolute;
     content: "";
     width: 40px;
@@ -355,11 +355,11 @@
     }
   }
 
-  .control__input[type="radio"]:hover + .control__mark {
+  .control__input[type="radio"]:hover+.control__mark {
     border: 2px solid #62d1ba;
   }
 
-  .control__input[type="radio"]:active + .control__mark {
+  .control__input[type="radio"]:active+.control__mark {
     border: 2px solid #b3b3b3;
   }
 
@@ -394,7 +394,7 @@
     padding-left: 51px;
   }
 
-  .control__input[type="checkbox"] + .control__mark {
+  .control__input[type="checkbox"]+.control__mark {
     content: "";
     position: absolute;
     width: 38px;
@@ -415,16 +415,16 @@
     }
   }
 
-  .control__input[type="checkbox"]:hover + .control__mark {
+  .control__input[type="checkbox"]:hover+.control__mark {
     border: 2px solid #62d1ba;
   }
 
 
-  .control__input[type="checkbox"]:active + .control__mark {
+  .control__input[type="checkbox"]:active+.control__mark {
     border: 2px solid #b3b3b3;
   }
 
-  .control__input[type="checkbox"]:checked + .control__mark::before {
+  .control__input[type="checkbox"]:checked+.control__mark::before {
     content: "";
     position: absolute;
     width: 24px;
@@ -513,34 +513,36 @@
   }
 }
 
-input,
-textarea {
-  width: 100%;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 400;
-  height: 51px;
-  padding: 4px 0 0 0;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #000000;
-  background-color: transparent;
-
-  @media (min-width: $tablet-width) {
-    font-size: 19px;
-    padding: 17px 17px 16px 17px;
-    height: 52px;
-  }
-
-  &::placeholder {
-    opacity: 0.3;
+.catalog-form {
+  input,
+  textarea {
+    width: 100%;
     font-size: 17px;
     line-height: 18px;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    height: 51px;
+    padding: 4px 0 0 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
 
     @media (min-width: $tablet-width) {
       font-size: 19px;
-      padding: 0;
+      padding: 17px 17px 16px 17px;
+      height: 52px;
+    }
+
+    &::placeholder {
+      opacity: 0.3;
+      font-size: 17px;
+      line-height: 18px;
+      font-family: "Open Sans", sans-serif;
+
+      @media (min-width: $tablet-width) {
+        font-size: 19px;
+        padding: 0;
+      }
     }
   }
 }
