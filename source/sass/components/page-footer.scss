@@ -16,12 +16,12 @@
 }
 
 .page-footer__logo {
-  &:hover .page-footer__img path {
+  &:hover .page-footer__img {
     fill: #46c1ae;
   }
 
-  &:active .page-footer__img path,
-  &:focus-within .page-footer__img path {
+  &:active .page-footer__img,
+  &:focus-within .page-footer__img {
     fill: #46c1ae;
     opacity: 0.1;
   }
