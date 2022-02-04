@@ -34,6 +34,10 @@
     font-weight: 700;
     fill: currentColor;
 
+    svg {
+      opacity: 0.2;
+    }
+
     &:hover,
     &:focus-within {
       opacity: 0.6;
@@ -42,6 +46,7 @@
     &:hover .user-nav-list__img,
     &:focus-within .user-nav-list__img {
       fill: #63d1bb;
+      opacity: 1;
     }
 
     &:active {
