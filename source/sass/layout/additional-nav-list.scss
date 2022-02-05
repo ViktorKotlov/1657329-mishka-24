@@ -1,6 +1,7 @@
 .additional-nav-list {
   @include reset-list;
   position: relative;
+  max-width: 600px;
 
   @media (min-width: $mobile-width) and (max-width: 1149px) {
     display: none;
