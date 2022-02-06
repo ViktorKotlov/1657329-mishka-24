@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог | HTML Academy: Мишка</title>
-  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous ">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -72,20 +72,19 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <article class="product-card">
+            <h3 class="visually-hidden">Карточка товара</h3>
             <a class="product-card__image image-bunny" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/jpg/catalog/hare-desktop.webp 1x, img/jpg/catalog/hare-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/jpg/catalog/hare-tablet.webp 1x, img/jpg/catalog/hare-tablet@2x.webp 2x">
-                <source type="image/webp" src="img/jpg/catalog/hare-mobile.webp"
-                  srcset="img/jpg/catalog/hare-mobile@2x.webp 2x">
 
                 <source media="(min-width: 1150px)"
                   srcset="img/jpg/catalog/hare-desktop.jpg 1x, img/jpg/catalog/hare-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/jpg/catalog/hare-tablet.jpg 1x, img/jpg/catalog/hare-tablet@2x.jpg 2x">
-                <img src="img/jpg/catalog/hare-mobile.jpg" srcset="img/jpg/catalog/hare-mobile@2x.jpg 2x"
+                <img src="img/jpg/catalog/hare-mobile.jpg" srcset="img/jpg/catalog/hare-mobile@2x.webp 2x"
                   alt="Зайчик-попрыгайчик.">
               </picture>
             </a>
@@ -98,9 +97,9 @@
                 <span class="product-card__price">1 200 руб.</span>
                 <button class="product-card__button" type="button">
                   <span class="visually-hidden">Положить в корзину</span>
-                  <svg class class="product-card__cart-icon" width="21" height="18">
-                  <use xlink:href="img/sprite.svg#cart"></use>
-                </svg>
+                  <svg class="product-card__cart-icon" width="21" height="18">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -108,13 +107,14 @@
         </li>
         <li class="catalog__item">
           <article class="product-card">
+            <h3 class="visually-hidden">Карточка товара</h3>
             <a class="product-card__image image-basket" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/jpg/catalog/laundry-basket-desktop.webp 1x, img/jpg/catalog/laundry-basket-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/jpg/catalog/laundry-basket-tablet.webp 1x, img/jpg/catalog/laundry-basket-tablet@2x.webp 2x">
-                <source type="image/webp" src="img/jpg/catalog/laundry-basket-mobile.webp"
+                <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/jpg/catalog/laundry-basket-mobile@2x.webp 2x">
 
                 <source media="(min-width: 1150px)"
@@ -144,13 +144,14 @@
         </li>
         <li class="catalog__item">
           <article class="product-card">
+            <h3 class="visually-hidden">Карточка товара</h3>
             <a class="product-card__image image-big-basket" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/jpg/catalog/basket-toys-desktop.webp 1x, img/jpg/catalog/basket-toys-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/jpg/catalog/basket-toys-tablet.webp 1x, img/jpg/catalog/basket-toys-tablet@2x.webp 2x">
-                <source type="image/webp" src="img/jpg/catalog/basket-toys-mobile.webp"
+                <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/jpg/catalog/basket-toys-mobile@2x.webp 2x">
 
                 <source media="(min-width: 1150px)"
@@ -163,7 +164,8 @@
             </a>
             <div class="product-card__content">
               <div class="product-card__main-info">
-                <a class="product-card__title title title--h3" href="#"><span>Большая корзинка<br> для игрушек</span></a>
+                <a class="product-card__title title title--h3" href="#"><span>Большая корзинка<br> для
+                    игрушек</span></a>
                 <span class="product-card__text">Диаметр 30 см, высота 30 см</span>
               </div>
               <div class="product-card__additional-info">
@@ -187,8 +189,7 @@
             srcset="img/jpg/catalog/video-desktop.webp 1x, img/jpg/catalog/video-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/jpg/catalog/video-tablet.webp 1x, img/jpg/catalog/video-tablet@2x.webp 2x">
-          <source type="image/webp" src="img/jpg/catalog/video-mobile.webp"
-            srcset="img/jpg/catalog/video-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/jpg/catalog/video-mobile@2x.webp 2x">
 
           <source media="(min-width: 1150px)"
             srcset="img/jpg/catalog/video-desktop.jpg 1x, img/jpg/catalog/video-desktop@2x.jpg 2x">
